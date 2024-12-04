@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <title>N-Queens Puzzle Solver Visualizer</title>
+
+    <!-- external style sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- heading of the page -->
+        <h1>
+            <!-- &#9813; is html emoji code for a crown emoji -->
+            N-Queens Puzzle Solver Visualizer &#9813;
+        </h1>
+
+        <!-- horizontal line below the title of the page -->
+        <hr id="title-hr">
+
+        <!-- description of the page -->
+        <div id="description-of-the-algorithm">
+            <p>
+                The N - Queens problem is to place N - Queens on an N x N Chessboard in such a manner that no Queens
+                attack each other by being in the same row, column or diagonal. This project visualizes the recursive
+                solution algorithm.
+            </p>
+        </div>
+    </header>
+
+    <!-- main section-->
+    <main>
+        <!-- algorithm visualizer section -->
+        <section id="algorithm-visualizer-section">
+            <!-- input section -->
+            <section id="input-section">
+                <!-- input the Value Of N -->
+                <label for="value-of-n">Value Of N (1-10):</label>
+                <!-- number input with validation -->
+                <input id="value-of-n" type="number" min="1" max="10" placeholder="N"
+                    onkeyup="validity.valid||(value='');">
+
+                <!-- Start Visualization Button-->
+                <button id="start-visualization">Start Visualization</button>
+
+                <hr>
+            </section>
+
+            <!-- N-Queens Visualizer section -->
+            <section id="n-queens-visualizer-section">
+            </section>
+        </section>
+
+        <!-- log section -->
+        <section id="log-section">
+            <p>
+                Logs
+
+                <hr>
+            </p>
+        </section>
+
+        <!-- javascript file -->
+        <script src="./js/App.js" type="module"></script>
+    </main>
+    
+    <!-- footer -->
+    <footer>
+        <hr>
+
+        <a href="https://github.com/urgyannurboo">Made by Urgyan Nurboo </a>
+    </footer>
+</body>
+
+</html>
